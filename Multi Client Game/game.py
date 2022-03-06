@@ -171,11 +171,11 @@ class Game:
         p2.drawBullets(self.canvas)
             
     def winner(self):
-        if(self.player.health == 0):
+        if(self.player.health <= 0):
             self.canvas.draw_text(str.encode("Johnson Wins"), 100, (self.width)/2 - 350,(self.height)/2 - 15)
             self.reset()
             pygame.time.delay(5000)
-        elif(self.player2.health == 0):
+        elif(self.player2.health <= 0):
             self.canvas.draw_text(str.encode("Crow Wins"), 100, (self.width)/2 - 230,(self.height)/2 - 15)
             self.reset()
             pygame.time.delay(5000)
@@ -185,8 +185,8 @@ class Game:
         self.player.y = 100
         self.player2.x = 800
         self.player2.y = 100
-        self.player.health = 10
-        self.player2.health = 10
+        self.currPlayer.health = 10
+        self.oppPlayer.health = 10
         self.player.bullets = []
         self.player2.bullets = []
         self.canvas.update()

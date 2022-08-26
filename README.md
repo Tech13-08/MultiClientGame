@@ -12,7 +12,7 @@ Then download the client.py, network.py, and game.py files and run only the clie
 In order for a game to connect, there must be at least one server and at least two clients
 
 
------// The Game // ---------
+# The Game
 Crow vs Johnson is a game where you play as either Crow or Johnson
 The goal is to shoot the other player until their health runs out
 Enjoy!!!!
